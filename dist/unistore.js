@@ -1,0 +1,2 @@
+function n(n,t){for(var r in t)n[r]=t[r];return n}function t(t){function r(n){for(var t=[],r=0;r<e.length;r++)e[r]===n?n=null:t.push(e[r]);e=t}function u(r,u){t=u?r:n(n({},t),r);for(var o=e,i=0;i<o.length;i++)o[i](t)}var e=[];return t=t||{},{action:function(n){return function(){for(var r=arguments,e=[t],o=0;o<arguments.length;o++)e.push(r[o]);var i=n.apply(this,e);null!=i&&(i.then?i.then(u):u(i))}},setState:u,subscribe:function(n){return e.push(n),function(){r(n)}},unsubscribe:r,getState:function(){return t}}}module.exports=t;
+//# sourceMappingURL=unistore.js.map
